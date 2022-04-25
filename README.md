@@ -31,3 +31,6 @@ start
 [DELETE] /api/delete-album { id | id[] }
 [PATCH]  /api/change-album-title { albumid, new_album_name }
 ```
+
+## my comment
+I didn't implement some things. But as a test task, I think this is probably enough
