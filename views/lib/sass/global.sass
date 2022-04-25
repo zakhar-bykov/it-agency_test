@@ -1,0 +1,106 @@
+@import variables
+
+html
+    font-family: 'Roboto', sans-serif
+
+body
+    width: 100vw
+    height: 100vh
+
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    header
+        width: 100%
+
+    main
+        width: 100%
+        flex-grow: 1
+        overflow: hidden
+
+    footer
+        width: 100%
+
+.view-block
+    width: 100%
+    height: auto
+
+form.auth-form
+    width: 300px
+
+    margin: auto
+    margin-top: 20vh
+    padding: 15px 50px 30px 50px
+
+    border-radius: 10px
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1)
+
+    & > div
+        margin-top: 15px
+
+    .inputs
+        width: auto
+
+        .input
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+            padding: 8px 0px
+
+            label
+                margin-bottom: 5px
+                color: #373737
+
+            input
+                padding: 6px 12px
+                border: 1px #373737 solid
+                border-radius: 3px
+
+    .info-message
+        margin-top: 10px
+        color: #c63131
+        transition: opacity 0.2s ease-in-out
+
+    .buttons
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+
+    .additional-links
+        margin-top: 30px
+        text-align: center
+
+
+
+
+
+button
+    padding: 10px 18px
+    border: 0
+    border-radius: 3px
+
+    &.continue
+        color: #fff
+        background-color: $button-continue-color
+        &:hover
+            background-color: $button-continue-color-hover
+
+    &.submit
+        color: #fff
+        background-color: $button-submit-color
+        &:hover
+            background-color: $button-submit-color-hover
+
+    &.decline
+        color: #fff
+        background-color: $button-decline-color
+        &:hover
+            background-color: $button-decline-color-hover
+
+
+a
+    text-decoration: none
+    &:hover
+        text-decoration: underline

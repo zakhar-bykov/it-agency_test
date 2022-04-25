@@ -1,0 +1,29 @@
+html
+    head
+        title Photo Cloud - login page
+
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        include lib/templates/includes.pug
+
+    body
+        header
+        main
+            .view-block#auth-form
+                form.auth-form
+                    header
+                        h1 Log in
+                    .inputs
+                        .input
+                            label(for="") login or email
+                            input(type="text" id="login-email" required)
+                        .input
+                            label(for="") password
+                            input(type="password" id="password" required)
+                    .info-message.invisible
+                        p#info-message &nbsp;
+                    .buttons
+                        button.continue Continue
+                    .additional-links
+                        a(href="/register") Not registered yet?
+        footer
